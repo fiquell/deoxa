@@ -2,7 +2,7 @@ import { ThemeProvider } from "@material-tailwind/react";
 import { type AppType } from "next/dist/shared/lib/utils";
 import "~/styles/globals.css";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+const App: AppType = ({ Component, pageProps }) => {
   return (
     <ThemeProvider>
       <Component {...pageProps} />
@@ -10,4 +10,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default App;
