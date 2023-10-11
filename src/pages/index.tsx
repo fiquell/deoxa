@@ -8,7 +8,10 @@ const Home = () => {
       <Head>
         <title>Deoxa - Landing Page Template</title>
         <meta name="description" content="Landing Page Template" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=1"
+        />
       </Head>
       <main className="container">
         <Hero />
