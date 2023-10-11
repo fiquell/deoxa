@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Button, Typography } from "@material-tailwind/react";
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "~/components/Footer";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
