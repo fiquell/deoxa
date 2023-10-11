@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Button, Typography } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CONTACTS = [
   {
@@ -67,14 +68,13 @@ const Footer = () => {
             4806 Spring Haven Trail South Orange, NJ 07079
           </Typography>
           {CONTACTS.map(({ text, icon, url }) => (
-            <Typography
+            <Link
               key={text}
-              as="a"
               href={url}
-              className="flex items-center gap-3 transition duration-300 ease-in-out hover:text-primary">
+              className="flex items-center gap-3 py-1 transition duration-300 ease-in-out hover:text-primary">
               <Icon icon={icon} className="mb-1 text-lg" />
               {text}
-            </Typography>
+            </Link>
           ))}
         </div>
         <div className="md:flex md:justify-between lg:w-1/2">
@@ -87,9 +87,9 @@ const Footer = () => {
                 <li
                   key={text}
                   className="transition duration-300 ease-in-out hover:text-primary">
-                  <Typography as="a" href={url} className="py-1">
+                  <Link href={url} className="block py-1">
                     {text}
-                  </Typography>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -103,11 +103,11 @@ const Footer = () => {
           </Typography>
           <div className="flex items-center gap-1">
             {ICONS.map(({ icon, url }) => (
-              <a key={icon} href={url}>
+              <Link key={icon} href={url}>
                 <Button variant="text">
                   <Icon icon={icon} className="text-xl opacity-80" />
                 </Button>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

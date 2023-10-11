@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Button, Typography } from "@material-tailwind/react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "~/components/Footer";
 
 const Home = () => {
@@ -28,16 +29,18 @@ const Home = () => {
               doloribus provident expedita dignissimos accusamus quidem
               voluptate ab eius, eveniet numquam id corrupti?
             </Typography>
-            <Button
-              variant="gradient"
-              color="deep-orange"
-              className="flex items-center gap-3">
-              Find Out How
-              <Icon
-                icon="material-symbols:line-end-arrow-notch-rounded"
-                className="mb-1 text-lg"
-              />
-            </Button>
+            <Link href="/" className="block">
+              <Button
+                variant="gradient"
+                color="deep-orange"
+                className="flex items-center gap-3">
+                Find Out How
+                <Icon
+                  icon="material-symbols:line-end-arrow-notch-rounded"
+                  className="mb-1 text-lg"
+                />
+              </Button>
+            </Link>
           </div>
           <div className="lg:w-1/2">
             <Image
