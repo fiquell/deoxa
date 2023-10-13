@@ -57,7 +57,7 @@ const Services = () => {
   return (
     <section className="mt-32 flex flex-col items-center">
       <Typography variant="h3" className="mb-3">
-        Our Services
+        Our <span className="text-primary">Services</span>
       </Typography>
       <Typography variant="paragraph" className="mb-16 text-center lg:w-1/2">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
