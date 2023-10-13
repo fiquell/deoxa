@@ -71,7 +71,7 @@ const Footer = () => {
             <Link
               key={text}
               href={url}
-              className="flex items-center gap-3 py-1 transition duration-300 ease-in-out hover:text-primary">
+              className="flex items-center gap-2 py-px transition duration-300 ease-in-out hover:text-primary">
               <Icon icon={icon} className="mb-1 text-lg" />
               {text}
             </Link>
@@ -104,7 +104,7 @@ const Footer = () => {
           <div className="flex items-center gap-1">
             {ICONS.map(({ icon, url }) => (
               <Link key={icon} href={url}>
-                <Button variant="text">
+                <Button variant="text" size="sm">
                   <Icon icon={icon} className="text-xl opacity-80" />
                 </Button>
               </Link>
