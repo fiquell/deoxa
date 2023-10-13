@@ -48,7 +48,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer className="mt-32">
       <div className="container flex flex-col gap-10 lg:flex-row lg:gap-32">
         <div className="lg:w-1/2">
           <Image
