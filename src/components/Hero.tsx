@@ -24,7 +24,7 @@ const Hero = () => {
           <Button
             variant="gradient"
             color="deep-orange"
-            className="flex items-center gap-3">
+            className="flex items-center gap-2">
             Find Out How
             <Icon
               icon="material-symbols:line-end-arrow-notch-rounded"
