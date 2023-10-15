@@ -7,51 +7,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import Link from "next/link";
-
-const SERVICES = [
-  {
-    icon: "material-symbols:headset-mic-rounded",
-    title: "Awesome Support",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    icon: "material-symbols:rule-settings-rounded",
-    title: "Solutions Business",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    icon: "material-symbols:monitor-heart-rounded",
-    title: "Digital Design",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    icon: "material-symbols:trophy-rounded",
-    title: "Goal Business",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    icon: "material-symbols:lightbulb-rounded",
-    title: "Branding Identity",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    icon: "material-symbols:query-stats-rounded",
-    title: "Dynamic Growth",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-];
+import { SERVICES } from "~/constants";
 
 const Services = () => {
   return (

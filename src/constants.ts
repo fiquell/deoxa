@@ -1,0 +1,112 @@
+export const SERVICES = [
+  {
+    icon: "material-symbols:headset-mic-rounded",
+    title: "Awesome Support",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    icon: "material-symbols:rule-settings-rounded",
+    title: "Solutions Business",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    icon: "material-symbols:monitor-heart-rounded",
+    title: "Digital Design",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    icon: "material-symbols:trophy-rounded",
+    title: "Goal Business",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    icon: "material-symbols:lightbulb-rounded",
+    title: "Branding Identity",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    icon: "material-symbols:query-stats-rounded",
+    title: "Dynamic Growth",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+];
+
+export const FEATURES = [
+  {
+    image: "/images/features/001.png",
+    icon: "material-symbols:computer-outline",
+    title: "Activity Reporting",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    image: "/images/features/002.png",
+    icon: "material-symbols:groups-outline",
+    title: "Team Management",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+  {
+    image: "/images/features/003.png",
+    icon: "material-symbols:analytics-outline",
+    title: "Marketing Analysis",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+    url: "/",
+  },
+];
+
+export const CONTACTS = [
+  {
+    text: "+00 123-4567-8900",
+    icon: "material-symbols:phone-enabled",
+    url: "tel:12345678900",
+  },
+  {
+    text: "support@deoxa.com",
+    icon: "material-symbols:alternate-email-rounded",
+    url: "mailto:support@deoxa.com",
+  },
+];
+
+export const LINKS = [
+  {
+    title: "Services",
+    items: [
+      { text: "Digital Marketing", url: "/" },
+      { text: "Business Analysis", url: "/" },
+      { text: "How It Work", url: "/" },
+      { text: "Fix & Flip", url: "/" },
+      { text: "Social Activation", url: "/" },
+    ],
+  },
+  {
+    title: "About Us",
+    items: [
+      { text: "Contact Us", url: "/" },
+      { text: "FAQs", url: "/" },
+      { text: "Blog", url: "/" },
+      { text: "Privacy Policy", url: "/" },
+    ],
+  },
+];
+
+export const ICONS = [
+  { icon: "fa6-brands:square-facebook", url: "/" },
+  { icon: "fa6-brands:square-instagram", url: "/" },
+  { icon: "fa6-brands:square-x-twitter", url: "/" },
+];

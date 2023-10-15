@@ -2,47 +2,7 @@ import { Icon } from "@iconify/react";
 import { Button, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-
-const CONTACTS = [
-  {
-    text: "+00 123-4567-8900",
-    icon: "material-symbols:phone-enabled",
-    url: "tel:12345678900",
-  },
-  {
-    text: "support@deoxa.com",
-    icon: "material-symbols:alternate-email-rounded",
-    url: "mailto:support@deoxa.com",
-  },
-];
-
-const LINKS = [
-  {
-    title: "Services",
-    items: [
-      { text: "Digital Marketing", url: "/" },
-      { text: "Business Analysis", url: "/" },
-      { text: "How It Work", url: "/" },
-      { text: "Fix & Flip", url: "/" },
-      { text: "Social Activation", url: "/" },
-    ],
-  },
-  {
-    title: "About Us",
-    items: [
-      { text: "Contact Us", url: "/" },
-      { text: "FAQs", url: "/" },
-      { text: "Blog", url: "/" },
-      { text: "Privacy Policy", url: "/" },
-    ],
-  },
-];
-
-const ICONS = [
-  { icon: "fa6-brands:square-facebook", url: "/" },
-  { icon: "fa6-brands:square-instagram", url: "/" },
-  { icon: "fa6-brands:square-x-twitter", url: "/" },
-];
+import { CONTACTS, ICONS, LINKS } from "~/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

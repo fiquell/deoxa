@@ -8,33 +8,7 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-
-const FEATURES = [
-  {
-    image: "/images/features/001.png",
-    icon: "material-symbols:computer-outline",
-    title: "Activity Reporting",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    image: "/images/features/002.png",
-    icon: "material-symbols:groups-outline",
-    title: "Team Management",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-  {
-    image: "/images/features/003.png",
-    icon: "material-symbols:analytics-outline",
-    title: "Marketing Analysis",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
-    url: "/",
-  },
-];
+import { FEATURES } from "~/constants";
 
 const Features = () => {
   return (
