@@ -71,7 +71,7 @@ const Footer = () => {
             <Link
               key={text}
               href={url}
-              className="flex items-center gap-2 py-px transition duration-300 ease-in-out hover:text-primary">
+              className="flex items-center gap-2 py-1 transition duration-300 ease-in-out hover:text-primary">
               <Icon icon={icon} className="mb-1 text-lg" />
               {text}
             </Link>

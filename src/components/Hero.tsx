@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between lg:flex-row lg:gap-20">
+    <section className="flex min-h-screen flex-col items-center justify-between gap-20 lg:flex-row">
       <div className="mt-28 space-y-8 lg:mt-0 lg:w-1/2">
         <Typography variant="h6" className="text-secondary">
           Creative Marketing

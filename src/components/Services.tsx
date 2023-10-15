@@ -68,10 +68,13 @@ const Services = () => {
           <Card
             key={title}
             shadow={false}
-            className="w-96 bg-accent/5 text-text md:w-80 lg:w-96">
+            className="w-80 bg-accent/5 text-text lg:w-96">
             <CardBody>
               <div className="mb-5 w-fit rounded-xl bg-primary/5 p-5">
-                <Icon icon={icon} className="text-5xl text-primary" />
+                <Icon
+                  icon={icon}
+                  className="text-4xl text-primary lg:text-5xl"
+                />
               </div>
               <Typography variant="h4" className="mb-3">
                 {title}
