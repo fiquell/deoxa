@@ -6,7 +6,9 @@ import "~/styles/globals.css";
 
 const App: AppType = ({ Component, pageProps }) => {
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      duration: 1.5,
+    });
 
     const raf = (time: number) => {
       lenis.raf(time);
