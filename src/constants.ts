@@ -1,4 +1,12 @@
-export const SERVICES = [
+import {
+  type Contacts,
+  type Features,
+  type Icons,
+  type Links,
+  type Services,
+} from "~/interfaces";
+
+export const SERVICES: Services[] = [
   {
     icon: "material-symbols:headset-mic-rounded",
     title: "Awesome Support",
@@ -43,7 +51,7 @@ export const SERVICES = [
   },
 ];
 
-export const FEATURES = [
+export const FEATURES: Features[] = [
   {
     image: "/images/features/001.png",
     icon: "material-symbols:computer-outline",
@@ -70,7 +78,7 @@ export const FEATURES = [
   },
 ];
 
-export const CONTACTS = [
+export const CONTACTS: Contacts[] = [
   {
     text: "+00 123-4567-8900",
     icon: "material-symbols:phone-enabled",
@@ -83,7 +91,7 @@ export const CONTACTS = [
   },
 ];
 
-export const LINKS = [
+export const LINKS: Links[] = [
   {
     title: "Services",
     items: [
@@ -105,7 +113,7 @@ export const LINKS = [
   },
 ];
 
-export const ICONS = [
+export const ICONS: Icons[] = [
   { icon: "fa6-brands:square-facebook", url: "/" },
   { icon: "fa6-brands:square-instagram", url: "/" },
   { icon: "fa6-brands:square-x-twitter", url: "/" },
