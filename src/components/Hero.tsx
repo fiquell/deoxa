@@ -1,12 +1,45 @@
 import { Icon } from "@iconify/react";
 import { Button, Typography } from "@material-tailwind/react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const LRef = useRef<HTMLDivElement | null>(null);
+  const RRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(LRef.current, {
+        x: -600,
+        scrollTrigger: {
+          trigger: LRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+
+      gsap.to(RRef.current, {
+        x: 600,
+        scrollTrigger: {
+          trigger: RRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    });
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
+
   return (
     <section className="flex min-h-screen flex-col items-center justify-between gap-20 lg:flex-row">
-      <div className="mt-28 space-y-8 lg:mt-0 lg:w-1/2">
+      <div ref={LRef} className="mt-28 space-y-8 lg:mt-0 lg:w-1/2">
         <Typography variant="h6" className="text-secondary">
           Creative Marketing
         </Typography>
@@ -33,7 +66,7 @@ const Hero = () => {
           </Button>
         </Link>
       </div>
-      <div className="lg:w-1/2">
+      <div ref={RRef} className="lg:w-1/2">
         <Image
           src="/images/hero.png"
           alt="Hero images"
