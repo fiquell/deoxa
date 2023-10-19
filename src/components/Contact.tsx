@@ -27,7 +27,7 @@ export default function Contact() {
       <Typography variant="h3" className="mb-3">
         Get In<span className="text-primary">Touch</span>
       </Typography>
-      <Typography variant="paragraph" className="mb-16 text-center lg:w-1/2">
+      <Typography variant="paragraph" className="mb-16 text-center lg:w-1/3">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
         deserunt maxime voluptas cupiditate laudantium ullam.
       </Typography>

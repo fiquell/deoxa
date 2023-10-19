@@ -1,5 +1,4 @@
 import { Typography } from "@material-tailwind/react";
-import React, { useState } from "react";
 
 type AboutSection = {
   id: number,
@@ -24,10 +23,10 @@ export const aboutSection: AboutSection[] = [
 
 
 
-export default function About() {
+const About = () => {
   return (
     <>
-      <div className="pt-12">
+      <div className="mt-32">
         <div className="flex flex-col gap-10 py-28 px-10 ">
           <div className="flex flex-col items-center justify-center">
             <Typography variant="h3" className="mb-3">
@@ -58,3 +57,5 @@ export default function About() {
     </>
   );
 }
+
+export default About;
