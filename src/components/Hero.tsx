@@ -12,7 +12,8 @@ const Hero = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(LRef.current, {
-        x: -600,
+        x: -200,
+        opacity: 0,
         scrollTrigger: {
           trigger: LRef.current,
           start: "top top",
@@ -22,7 +23,8 @@ const Hero = () => {
       });
 
       gsap.to(RRef.current, {
-        x: 600,
+        x: 200,
+        opacity: 0,
         scrollTrigger: {
           trigger: RRef.current,
           start: "top top",
