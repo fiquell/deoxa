@@ -10,7 +10,14 @@ const App: AppType = ({ Component, pageProps }) => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      lerp: 0.7,
+      duration: 1.7,
+      smoothWheel: true,
+      smoothTouch: true,
+      wheelMultiplier: 0.7,
+      touchMultiplier: 0.7,
+    });
 
     const raf = (time: number) => {
       lenis.raf(time);
