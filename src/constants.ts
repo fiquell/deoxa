@@ -118,3 +118,4 @@ export const ICONS: Icons[] = [
   { icon: "fa6-brands:square-instagram", url: "/" },
   { icon: "fa6-brands:square-x-twitter", url: "/" },
 ];
+

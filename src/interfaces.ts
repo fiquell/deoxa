@@ -30,3 +30,9 @@ export interface Icons {
   icon: string;
   url: string;
 }
+
+export interface aboutSection {
+ id: number,
+ tittle: string,
+ desc: string
+}
