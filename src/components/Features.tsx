@@ -25,7 +25,7 @@ const Features = () => {
           <div
             key={title}
             className={`flex flex-col items-center justify-center md:flex-row ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
+              index % 2 === 1 && "md:flex-row-reverse"
             }`}>
             <div className="flex justify-center md:w-1/2">
               <Image src={image} alt={title} width={430} height={430} />
