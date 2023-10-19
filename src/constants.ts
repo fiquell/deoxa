@@ -4,6 +4,7 @@ import {
   type Icons,
   type Links,
   type Services,
+  type VisionMission,
 } from "~/interfaces";
 
 export const SERVICES: Services[] = [
@@ -48,6 +49,19 @@ export const SERVICES: Services[] = [
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
     url: "/",
+  },
+];
+
+export const VISION_MISSION: VisionMission[] = [
+  {
+    title: "Our Vision",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+  },
+  {
+    title: "Our Mission",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
   },
 ];
 
@@ -118,4 +132,3 @@ export const ICONS: Icons[] = [
   { icon: "fa6-brands:square-instagram", url: "/" },
   { icon: "fa6-brands:square-x-twitter", url: "/" },
 ];
-

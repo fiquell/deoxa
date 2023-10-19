@@ -1,61 +1,35 @@
 import { Typography } from "@material-tailwind/react";
-
-type AboutSection = {
-  id: number,
-  tittle: string,
-  desc: string
-}
-
-
-
-export const aboutSection: AboutSection[] = [
-  {
-    id: 1,
-    tittle: 'Lorem, ipsum',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque '
-  },
-  {
-    id: 2,
-    tittle: 'Lorem, ipsum',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque '
-  }
-]
-
-
+import { VISION_MISSION } from "~/constants";
 
 const About = () => {
   return (
-    <>
-      <div className="mt-32">
-        <div className="flex flex-col gap-10 py-28 px-10 ">
-          <div className="flex flex-col items-center justify-center">
-            <Typography variant="h3" className="mb-3">
-              About <span className="text-primary">Us</span>
-            </Typography>
-            <Typography variant="paragraph" className="lg:w-1/2 text-center">
-              Maecenas temTypography us tellus eget condimentum rhoncus sem quam semper
-              libero pulvinar hendrerit id lorem.
-            </Typography>
-          </div>
-          <div className="container grid md:grid-cols-3 lg:grid-cols-3 place-items-center grid-cols-1 gap-5">
-            <div className="flex w-80 flex-col text-3xl">
-              <Typography variant="h2">Lorem ipsum dolor sit amet consectetur</Typography>
-            </div>
-            {aboutSection.map( items => (
-            <div key={items.id}>
-              <div className="flex w-80 flex-col">
-              <Typography variant="h5" className="text-xl mb-2">{items.tittle}</Typography>
-              <Typography variant="paragraph" className="text-gray-500">
-                {items.desc}
+    <section className="mt-32 flex flex-col items-center">
+      <Typography variant="h3" className="mb-3">
+        About <span className="text-primary">Us</span>
+      </Typography>
+      <Typography variant="paragraph" className="mb-16 text-center lg:w-1/2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+        deserunt maxime voluptas cupiditate laudantium ullam.
+      </Typography>
+      <div className="flex flex-col gap-5 md:flex-row lg:gap-20 lg:px-20">
+        <div className="lg:w-3/4">
+          <Typography variant="h2" className="leading-relaxed">
+            Passionate About Creating Templates For Setup
+          </Typography>
+        </div>
+        <div className="flex flex-col gap-5 lg:flex-row">
+          {VISION_MISSION.map(({ title, subtitle }) => (
+            <div key={title} className="lg:w-1/2">
+              <Typography variant="h5" className="mb-3">
+                {title}
               </Typography>
+              <Typography variant="paragraph">{subtitle}</Typography>
             </div>
-          </div>
-            ))}
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
-}
+};
 
 export default About;

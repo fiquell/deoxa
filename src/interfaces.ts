@@ -7,6 +7,11 @@ export interface Services {
   url: string;
 }
 
+export interface VisionMission {
+  title: string;
+  subtitle: string;
+}
+
 export interface Features {
   image: string;
   icon: string;
@@ -29,10 +34,4 @@ export interface Links {
 export interface Icons {
   icon: string;
   url: string;
-}
-
-export interface aboutSection {
- id: number,
- tittle: string,
- desc: string
 }
