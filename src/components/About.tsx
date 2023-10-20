@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-5 lg:flex-row">
           {VISION_MISSION.map(({ title, subtitle }) => (
-            <div key={title} className="lg:w-1/2">
+            <div key={title} className="lg:w-full">
               <Typography variant="h5" className="mb-3">
                 {title}
               </Typography>
