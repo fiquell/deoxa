@@ -20,6 +20,11 @@ export interface Features {
   url: string;
 }
 
+export interface Address {
+  title: string;
+  subtitle: string;
+}
+
 export interface Contacts {
   text: string;
   icon: string;

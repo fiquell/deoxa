@@ -1,73 +1,82 @@
-import React from "react";
-import { Typography, Input, Textarea, Button } from "@material-tailwind/react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import { ADDRESS } from "~/constants";
 
-type TypeContact = {
-    tittle: string,
-    subTittle: string
-}
-
-export const ContactAdress: TypeContact[] = [
-{
-    tittle: 'Addres - A',
-    subTittle: 'Lorem ipsum dolor sit amet',
-},
-{
-    tittle: 'Address - B',
-    subTittle: 'Lorem ipsum dolor sit amet',
-}
-]
-
-export default function Contact() {
+const Contact = () => {
   return (
-    <>
-    <div className="container">
-    <div className="flex flex-col items-center ">
+    <section className="mt-32 flex flex-col items-center">
       <Typography variant="h3" className="mb-3">
-        Get In<span className="text-primary">Touch</span>
+        Get In <span className="text-primary">Touch</span>
       </Typography>
-      <Typography variant="paragraph" className="mb-16 text-center lg:w-1/3">
+      <Typography variant="paragraph" className="mb-16 text-center lg:w-1/2">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
         deserunt maxime voluptas cupiditate laudantium ullam.
       </Typography>
-    </div>
-    <div className="flex gap-20">
-      <div className="flex flex-col gap-5 w-1/3">
-        <Typography variant="h4"> Contact Info</Typography>
-        <Typography>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid neque dolorem perferendis mollitia iure voluptatum reprehenderit, dolore id veniam dolor.</Typography>
-        <Typography>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, deleniti!</Typography>
-        <div className="flex gap-5">
-        {ContactAdress.map( items => (
-            <div key={items.tittle} className="w-1/2">
-                <Typography variant="h5">
-                    {items.tittle}
+      <div className="flex flex-col gap-10 lg:flex-row lg:gap-20">
+        <div className="space-y-5 lg:w-2/3">
+          <div>
+            <Typography variant="h4" className="mb-3">
+              Contact Info
+            </Typography>
+            <Typography variant="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              voluptatem blanditiis laboriosam labore deserunt reprehenderit.
+            </Typography>
+          </div>
+          <Typography variant="paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+            ratione.
+          </Typography>
+          <div className="flex flex-col gap-5 md:flex-row lg:gap-1">
+            {ADDRESS.map(({ title, subtitle }) => (
+              <div key={title}>
+                <Typography variant="h6" className="mb-3">
+                  {title}
                 </Typography>
-                <Typography variant="paragraph">
-                    {items.subTittle}
-                </Typography>
-            </div>
-        ))}
+                <Typography variant="paragraph">{subtitle}</Typography>
+              </div>
+            ))}
+          </div>
         </div>
+        <form className="space-y-5 lg:w-full">
+          <div className="flex flex-col gap-5 lg:flex-row">
+            <Input
+              type="text"
+              size="lg"
+              color="deep-orange"
+              label="Name"
+              crossOrigin={undefined}
+            />
+            <Input
+              type="email"
+              size="lg"
+              color="deep-orange"
+              label="Email address"
+              crossOrigin={undefined}
+            />
+          </div>
+          <Input
+            type="text"
+            size="lg"
+            color="deep-orange"
+            label="Subject"
+            crossOrigin={undefined}
+          />
+          <Textarea size="lg" color="deep-orange" label="Message" rows={6} />
+          <Button
+            variant="gradient"
+            color="deep-orange"
+            className="flex w-fit items-center gap-2">
+            Send Message
+            <Icon
+              icon="material-symbols:send-rounded"
+              className="mb-1 text-lg"
+            />
+          </Button>
+        </form>
       </div>
-      <div className="w-1/2">
-        <div className="flex gap-5">
-            <Input label="Username" crossOrigin={undefined} />
-            <Input label="Username" crossOrigin={undefined} />
-        </div>
-        <div className="flex flex-col gap-10 mt-10">
-        <Input label="Username" crossOrigin={undefined} />
-        <Textarea label="massage" />
-        <Link href={""}>
-            <Button color="deep-orange" className="flex items-center gap-3"> 
-                massage
-                <Icon icon="material-symbols:send"/>
-            </Button>
-        </Link>
-        </div>
-        </div>
-        </div>
-      </div>
-      </>
+    </section>
   );
-}
+};
+
+export default Contact;
