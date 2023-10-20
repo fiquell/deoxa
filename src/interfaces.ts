@@ -7,12 +7,22 @@ export interface Services {
   url: string;
 }
 
+export interface VisionMission {
+  title: string;
+  subtitle: string;
+}
+
 export interface Features {
   image: string;
   icon: string;
   title: string;
   subtitle: string;
   url: string;
+}
+
+export interface Address {
+  title: string;
+  subtitle: string;
 }
 
 export interface Contacts {

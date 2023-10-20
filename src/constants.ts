@@ -1,9 +1,11 @@
 import {
+  type Address,
   type Contacts,
   type Features,
   type Icons,
   type Links,
   type Services,
+  type VisionMission,
 } from "~/interfaces";
 
 export const SERVICES: Services[] = [
@@ -51,6 +53,19 @@ export const SERVICES: Services[] = [
   },
 ];
 
+export const VISION_MISSION: VisionMission[] = [
+  {
+    title: "Our Vision",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+  },
+  {
+    title: "Our Mission",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
+  },
+];
+
 export const FEATURES: Features[] = [
   {
     image: "/images/features/001.png",
@@ -75,6 +90,17 @@ export const FEATURES: Features[] = [
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam praesentium tenetur suscipit! Suscipit, tempora?",
     url: "/",
+  },
+];
+
+export const ADDRESS: Address[] = [
+  {
+    title: "Address - A",
+    subtitle: "3165 Roosevelt Wilson Riverside, CA 92507",
+  },
+  {
+    title: "Address - B",
+    subtitle: "1121 Bombardier Way Southfield, MI 48075",
   },
 ];
 
